@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.regions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 10px;
+    transition: 0.8s;
+    background-color: bisque;
+}
+
+button:hover {
+    background-color: #f79082;
+    color: #fff;
+}
+
+.list>button {
+    font-size: 10px;
+    margin: 1px;
+}
+
+.loading {
+    font-size: 50px;
+}
+.hide {
+    display: none;
+}
+.static-dots {
+    display: flex;
+    height: 5rem;
+    width: 6rem;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.static-dots .dot,
+.animated-dots .dot {
+    animation: ease-in-out infinite running reverse;
+}
+
+.static-dots .dot {
+    animation-name: dots;
+    animation-duration: 1s;
+}
+
+.static-dots .dot:first-child {
+    animation-delay: 0;
+}
+
+.static-dots .dot:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.static-dots .dot:last-child {
+    animation-delay: 0.8s;
+}
+
+.dot {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background: rgb(218, 189, 60);
+}
+
+@keyframes dots {
+    30% {
+        background: #777;
+    }
+
+    80% {
+        background: #777;
+    }
+}

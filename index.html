@@ -1,1 +1,43 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <title>Api-World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="regions">
+        <button class="africa">Africa</button>
+        <button class="america">Americas</button>
+        <button class="asia">Asia</button>
+        <button class="europe">Europe</button>
+        <button class="oceania">Oceania</button>
+    </div>
+
+    <center class="hide">
+        <div class="loader static-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </center>
+
+    <div>
+        <canvas id="myChart" height="100">
+        </canvas>
+    </div>
+
+    <div class="list">
+
+    </div>
+    <center>
+        <h3 id="errormsg"></h3>
+    </center>
+    <script src="script.js"></script>
+</body>
+
+</html>
